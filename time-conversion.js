@@ -12,16 +12,20 @@ function timeConversion(s){
 
 // determine AM or PM
 // if AM remove AM from string
-  if(s.includes('AM') && s.substring(0, 1) === '0'){
-    return s.substring(0, 8)
-  } 
-  else if (s.includes('AM') && s.substring(0, 1) === '1' ){
+  if(s.includes('AM') && s.substring(0, 2) === '12'){
     hour = s.substring(0, 2)
     let sub12 = 12 - hour
     convertNum = sub12.toString()
-      return `0${convertNum}${s.substring(2, 8)}`
+
+    return `0${convertNum}${s.substring(2, 8)}`
   }
-  else if(s.substring(0,1) === '0'){
+ else if (s.includes('AM')){
+      return s.substring(0, 8)
+  }
+ else if (s.substring(0, 2) === '12'){
+   return s.substring(0, 8)
+ }
+ else if(s.substring(0,1) === '0'){
     hour = s.substring(1,2)
     add12 = 12 + parseInt(hour)
     
@@ -34,10 +38,11 @@ function timeConversion(s){
   }
 
 let time1 = '11:05:45AM'
-let time2 = '04:10:45PM'
-let time3 = '11:15:10PM'
+let time2 = '04:10:45AM'
+let time3 = '12:05:39AM'
 let time4 = '12:00:00PM'
-let time5 = '12:40:22AM'
+let time5 = '12:40:22PM'
 console.log(timeConversion(time1))
 console.log(timeConversion(time3))
 console.log(timeConversion(time5))
+console.log(timeConversion(time2))
