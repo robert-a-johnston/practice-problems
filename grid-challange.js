@@ -4,7 +4,7 @@
 // order, top to bottom. Return YES if they are or NO if they are not.
 
 g1 = ['ttt', 'zzz', 'zzz']
-g2 = ['ebacz', 'fghij', 'olmkn', 'trpqs', 'xywuv']
+g2 = ['ebacd', 'fghij', 'olmkn', 'trpqs', 'xywuv']
 g3 = [
   'plkcarul',
   'yqkpzifl',
@@ -18,8 +18,7 @@ g3 = [
 function gridChallenge(grid) {
   let sortedGrid = []
   let checkCol = []
-  let count = 0
-  let count2 = 0
+  
 
   // sort grid elements create grid array
   for(let i = 0; i < grid.length; i++) {
@@ -29,33 +28,30 @@ function gridChallenge(grid) {
     let tempString = tempArr.join('')
     sortedGrid.push(tempString)
   }
-  console.log('checkCol',checkCol)
-  // set first group to check
-  let tempColArr = checkCol[0]
-  // check for col order
-  for(let i = 1; i < checkCol.length; i++ ){
-    // drop in after so can check trailing array
-    if(count > 0){
-      tempColArr = checkCol[i]
-    }
-    console.log('temp', tempColArr)
-    for(let j = 0; j < checkCol[i].length; j++){
-      // check array groups and add to count if
-      // one is
-      if(tempColArr[j] > checkCol[i][j]){
+
+  console.log('checkCol array',checkCol)
+  // create new matrix of columns as rows
+  let [row] = checkCol
+
+  let colArr = row.map((value, column) => checkCol.map(row => row[column]))
+  console.log('row',colArr)
+  
+
+  
+  // check if colArr rows are in alpha order
+  for(let i = 0; i < colArr.length; i++){
+    for(let j = 0; j < colArr[i].length; j++){
+      let tempValue = colArr[i][j]
+      console.log('tempVal', tempValue)
+      console.log('colArr', colArr[i][j +1])
+      if(tempValue > colArr[i][j + 1]){
         return 'NO'
       }
-    }
-    count++
+      
+    }  
   }
-  console.log('count2', count2)
-  // if(count2 > 0){
-  //   return 'NO'
-  // }else{
-  //   return 'YES'
-  // }
   return 'YES'
 }
-
-console.log(gridChallenge(g3))
-// console.log(gridChallenge(g2))
+  
+// gridChallenge(g3)
+console.log(gridChallenge(g2))
