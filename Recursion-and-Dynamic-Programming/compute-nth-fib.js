@@ -46,7 +46,18 @@ function fib(n){
   }
   return memo[n-1] + memo[n-2]
 }
-
-
-console.log(fibonacci(1))
+// may have issues with this an javascript
+// function fib2(n){
+//   if(n === 0 || n === 1) return n
+//   let a = 0
+//   let b = 1
+//   let c
+//   for(let i = 2; i < n; i++) {
+//     c = a + b
+//     a = b
+//     b = c
+//   }
+//   return c
+// }
+console.log(fibonacci(5))
 console.log(fib(5))
