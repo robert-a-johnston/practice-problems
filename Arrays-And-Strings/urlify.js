@@ -1,7 +1,13 @@
 // replace all spaces in a string with '%20'
 // given the 'true' length of the string
-// input: 'Mr John Smith   ' 13
-// output: 'Mr%20John%20Smith'
+
+// I: two strings
+// O: string
+// EDGE CASE: empty string
+// CONSTRAINTS: optimize
+
+// time complexity: constant
+// space complexity: constant 
 
 function urlReplace(s, rs){
   console.log(s.replaceAll(' ','%20'))
