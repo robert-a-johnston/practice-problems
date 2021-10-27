@@ -1,7 +1,7 @@
 ## Array
 
 - [Two Sum](https://leetcode.com/problems/two-sum/) (easy)
-  - use hash table to make O(n^2) -> O(n) use .hasOwnProperty()
+  - use hash table to make O(n^2) -> O(n) use [.hasOwnProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)
 - [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) (easy)
   - change the input string to track profit
 - [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) (easy)
@@ -15,8 +15,11 @@
 - [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) (medium)
   - use binary search look for center then recursion
 - [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) (medium)
-- 3Sum - https://leetcode.com/problems/3sum/
-- Container With Most Water - https://leetcode.com/problems/container-with-most-water/
+  - binary search for pivot point to create two arrays and then binary search for target
+- [3Sum](https://leetcode.com/problems/3sum/) (medium)
+  - sort array, create two pointers at each end of array, and a while in a for loop.
+- [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) (medium) 
+  - start from 'right side' of array
   
 ## Binary
 

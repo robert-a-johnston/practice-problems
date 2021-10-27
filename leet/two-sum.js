@@ -25,24 +25,30 @@ function twoSum(nums, target) {
 
 // uses hash table
 function twoSum2(nums, target) {
-  // hash table
-  let numbObject = {}
+  let numbObject = {}         // hash table
+
   // fill hash table
   for(let i = 0; i < nums.length; i++){
     let num = nums[i]
-    // sets key to number and index to value
+    // sets key to number and index to value '5': 1
     numbObject[num] = i
   }
+
   for(let i = 0; i < nums.length; i++){
     // gets a target number to search for
     let diff = target - nums[i]
-    
+
+    // if hash table has number and the value
+    // and makes sure not using the same element twice
+    console.log(numbObject)
+    console.log(diff, numbObject[diff], i)
     if(numbObject.hasOwnProperty(diff) && numbObject[diff] !== i) {
+      // return index of numbers used in any order
       return [i, numbObject[diff]]
     }
   }
-  console.log(numbObject)
 }
 nums1 = [3, 3, 4]
-console.log(twoSum(nums1, 6))
-console.log(twoSum2(nums1, 6))
+nums2 = [4, 5, 6, 1]
+// console.log(twoSum(nums1, 6))
+console.log(twoSum2(nums2, 6))
