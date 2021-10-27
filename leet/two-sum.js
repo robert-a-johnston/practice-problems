@@ -36,6 +36,7 @@ function twoSum2(nums, target) {
   for(let i = 0; i < nums.length; i++){
     // gets a target number to search for
     let diff = target - nums[i]
+    
     if(numbObject.hasOwnProperty(diff) && numbObject[diff] !== i) {
       return [i, numbObject[diff]]
     }

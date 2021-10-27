@@ -1,20 +1,24 @@
-Array
+## Array
 
-- Two Sum - https://leetcode.com/problems/two-sum/ (easy)
+- [Two Sum](https://leetcode.com/problems/two-sum/) (easy)
   - use hash table to make O(n^2) -> O(n) use .hasOwnProperty()
-- Best Time to Buy and Sell Stock - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ (easy)
+- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) (easy)
   - change the input string to track profit
-- Contains Duplicate - https://leetcode.com/problems/contains-duplicate/ (easy)
+- [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) (easy)
   - use hashMap with const hashMap = new Map then .set to create
-- Product of Array Except Self - https://leetcode.com/problems/product-of-array-except-self/
-- Maximum Subarray - https://leetcode.com/problems/maximum-subarray/
-- Maximum Product Subarray - https://leetcode.com/problems/maximum-product-subarray/
-- Find Minimum in Rotated Sorted Array - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
-- Search in Rotated Sorted Array - https://leetcode.com/problems/search-in-rotated-sorted-array/
+- [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) (medium)
+  - calculate right and left arrays and multiply together
+- [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) (easy)
+  - use kadane's algorithm/ dynamic programming
+- [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) (medium)
+  - hint: kadane's algorithm
+- [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) (medium)
+  - use binary search look for center then recursion
+- [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) (medium)
 - 3Sum - https://leetcode.com/problems/3sum/
 - Container With Most Water - https://leetcode.com/problems/container-with-most-water/
   
-  Binary
+## Binary
 
 - Sum of Two Integers - https://leetcode.com/problems/sum-of-two-integers/
 - Number of 1 Bits - https://leetcode.com/problems/number-of-1-bits/
