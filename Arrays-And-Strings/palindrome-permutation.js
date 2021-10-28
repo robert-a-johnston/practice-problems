@@ -4,7 +4,7 @@
 
 // use hash table
 // this is based on the idea that a palindrome can have only
-// one odd number occurance of a letter maximum.
+// one odd number occurrence of a letter maximum.
 
 function palPerm(string) {
   // creates hash table
@@ -14,7 +14,7 @@ function palPerm(string) {
   // sets up hash table
   for (let i = 0; i < normStr.length; i++) {
     const char = normStr[i];
-    // counts occurences
+    // counts occurrences
     if (char !== " ") {
       charMap[char] = charMap[char] ? charMap[char] + 1 : 1;
     }

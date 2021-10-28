@@ -27,11 +27,12 @@
   - use bitwise operators ^ % <<
 - [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) (easy)
   - when change toString(2) to make sure binary number
-- Counting Bits - https://leetcode.com/problems/counting-bits/
-- Missing Number - https://leetcode.com/problems/missing-number/
-- Reverse Bits - https://leetcode.com/problems/reverse-bits/
+- [Counting Bits](https://leetcode.com/problems/counting-bits/) (easy)
+  - use previous values to calculate later values base on odd/even
+- [Missing Number](https://leetcode.com/problems/missing-number/) (easy)
+- [Reverse Bits](https://leetcode.com/problems/reverse-bits/)
 
-Dynamic Programming
+## Dynamic Programming
 
 - Climbing Stairs - https://leetcode.com/problems/climbing-stairs/
 - Coin Change - https://leetcode.com/problems/coin-change/
