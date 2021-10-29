@@ -30,11 +30,13 @@
 - [Counting Bits](https://leetcode.com/problems/counting-bits/) (easy)
   - use previous values to calculate later values base on odd/even
 - [Missing Number](https://leetcode.com/problems/missing-number/) (easy)
-- [Reverse Bits](https://leetcode.com/problems/reverse-bits/)
+  - subtract expected(using n.length) from actual(using reduce) of whole array
+- [Reverse Bits](https://leetcode.com/problems/reverse-bits/) (easy)
+  - adjust length by 32 - n.length in for loop for leading 0s
 
 ## Dynamic Programming
 
-- Climbing Stairs - https://leetcode.com/problems/climbing-stairs/
+- {Climbing Stairs}(https://leetcode.com/problems/climbing-stairs/) (easy)
 - Coin Change - https://leetcode.com/problems/coin-change/
 - Longest Increasing Subsequence - https://leetcode.com/problems/longest-increasing-subsequence/
 - Longest Common Subsequence -
