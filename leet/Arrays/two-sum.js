@@ -48,7 +48,7 @@ function twoSum2(nums, target) {
     }
   }
 }
-nums1 = [3, 3, 4]
-nums2 = [4, 5, 6, 1]
+let nums1 = [3, 3, 4]
+let nums2 = [4, 5, 6, 1]
 // console.log(twoSum(nums1, 6))
 console.log(twoSum2(nums2, 6))
