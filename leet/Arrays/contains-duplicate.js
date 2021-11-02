@@ -33,9 +33,12 @@
 //}
 
 function containsDuplicate(nums){
+  // create hash table
   const hashM = new Map()
+  // assign number count to 1
   for(let i = 0; i < nums.length; i++){
     console.log(hashM.get(nums[i]))
+    // check if number has been used before
     if(hashM.get(nums[i]))
       return true
     hashM.set(nums[i], 1)
