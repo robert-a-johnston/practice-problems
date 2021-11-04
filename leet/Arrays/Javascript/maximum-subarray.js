@@ -7,7 +7,7 @@
 // EDGE CASE: 
 // CONSTRAINTS: optimize
 
-// time complexity: 
+// time complexity: O(n)
 // space complexity:  
 
 // Objective: return array of answers where you multiply all numbers 
