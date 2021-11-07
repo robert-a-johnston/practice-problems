@@ -13,7 +13,6 @@
 // Objective: return array of answers where you multiply all numbers 
 // to the left and to the right of a specific number in the array
 
-// hint: kadane's algorithm
 
 public class MaximumSubArray {
   public static void main(String[] rgs) {

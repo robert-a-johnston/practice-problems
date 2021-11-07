@@ -1,0 +1,23 @@
+# Dynamic Programming
+## Process
+  - calculate brute force
+  - Test for efficiency - large numbers, edge cases
+  - Draw problem for smallish example
+  - look for similar patterns in drawing
+  - find base cases
+  - make problem size smaller
+  - ### Memoization
+    - store duplicate patterns 
+      - in javascript can use objects
+      - example javascript fib or stair climber
+        - add empty memo object into arguments
+        - save pattern in fib object
+    - STRATEGY
+      - 1. MAKE IT WORK
+        - visualize problem as a tree
+        - implement the tree using recursion
+        - test it (the brute force for large numbers may be slow)
+      - 2. MAKE IT EFFICIENT
+        - add memo object = has keys and values
+        - add a base case to return memo values
+        - store return values into the memo

@@ -13,15 +13,30 @@
 
 // Objective: return decimal string of reversed number
 
-function climbStairs(n) {
+// function climbStairs(n) {
+//   if(n < 0){
+//     return 0
+//   } else if(n === 0){
+//     return 1
+//   } else {
+//     return climbStairs(n -1) + climbStairs(n -2)
+//   }
+// }
+
+function climbStairs(n, memo = {}) {
+  console.log('memo ', memo)
+  if (n in memo) return memo[n]
+  
   if(n < 0){
     return 0
   } else if(n === 0){
     return 1
+  } else if (n === 1 || n === 2 || n == 3){
+    return n
   } else {
-    return climbStairs(n -1) + climbStairs(n -2)
+    memo[n] = climbStairs(n - 1, memo) + climbStairs(n - 2, memo)
+    return memo[n]
   }
 }
-
-let n = 45
+let n = 6
 console.log(climbStairs(n))
