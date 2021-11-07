@@ -2,7 +2,7 @@
 // output: array containing elements that =
 // target sum  if no none return null
 
-// time complex: brute force: O(n^m * m)
+// time complex: brute force: O(n^m * m)  memo:O(n * m^2)
 const howSum = function(target, numbers, memo = {}) {
   if(target in memo) return memo[target]
   if(target === 0) return []
