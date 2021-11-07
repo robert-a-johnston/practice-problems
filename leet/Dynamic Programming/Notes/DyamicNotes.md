@@ -21,3 +21,7 @@
         - add memo object = has keys and values
         - add a base case to return memo values
         - store return values into the memo
+  - Examples
+    - canSum -> decision problem (boolean, can you do it)
+    - howSum -> combinatorial problem (how will you do it)
+    - bestSum -> optimization (best way to do it)
