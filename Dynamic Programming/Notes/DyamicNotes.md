@@ -26,3 +26,6 @@
     - howSum -> combinatorial problem (how will you do it)
     - bestSum -> optimization (best way to do it)
   - ### Tabulation
+    - Building a table
+      - table should be about the length of the input (usually array with length is + 1 of input int: n = 6, table.length = 7)
+      - set array elements to default like 0 for running sum
