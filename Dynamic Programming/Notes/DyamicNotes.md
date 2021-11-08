@@ -29,3 +29,11 @@
     - Building a table
       - table should be about the length of the input (usually array with length is + 1 of input int: n = 6, table.length = 7)
       - set array elements to default like 0 for running sum
+      - STRATEGY
+        - visualize problem as table
+        - size the table based on inputs
+        - initialize the table with default values
+          - if asked for number then initialize with number, boolean with boolean
+          - seed trivial answer into the table
+          - iterate through the table
+          - fill further positions based on current position
