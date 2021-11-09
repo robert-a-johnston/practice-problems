@@ -37,3 +37,9 @@
           - seed trivial answer into the table
           - iterate through the table
           - fill further positions based on current position
+  ### Final notes
+  - notice any overlapping sub-problems
+  - decide what is the trivially smallest input
+  - think recursively for memo
+  - think iteratively use tabulation
+  - draw strategy first
