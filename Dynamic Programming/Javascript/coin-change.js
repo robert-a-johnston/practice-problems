@@ -19,26 +19,45 @@
 // Objective: get fewest number of integers in array to get to target int
 // if cannot get to target then return -1
 
-function coinChange(coins, amount) {
+// function coinChange(coins, amount) {
 
-  const table = Array(amount + 1).fill(Infinity)
+//   const table = Array(amount + 1).fill(Infinity)
 
-  table[0] = 0
+//   table[0] = 0
 
-  for(let coin of coins){
-    for(let amount = 0; amount < table.length; amount++) {
-      if(coin <= amount){
-        let idx = amount - coin
-        let potentialAmt = table[idx] + 1
-        table[amount] = Math.min(potentialAmt, table[amount])
+//   for(let coin of coins){
+//     for(let amount = 0; amount < table.length; amount++) {
+//       if(coin <= amount){
+//         let idx = amount - coin
+//         let potentialAmt = table[idx] + 1
+//         table[amount] = Math.min(potentialAmt, table[amount])
+//       }
+//     }
+//   }
+//   return table[table.length - 1] === Infinity ? -1 : table[table.length - 1]
+// }
+
+const coinChange = (amount, coins) => {
+  const table = Array(amount + 1).fill(null)
+  table[0] = []
+  for(let i = 0; i <= amount; i++) {
+    if(table[i] !== null) {
+      for(let coin of coins) {
+        const combo = [...table[i], coin]
+        if(!table[i + coin] || table[i + coin].length > combo.length) {
+          table[i + coin] = combo
+        }
       }
     }
   }
-  return table[table.length - 1] === Infinity ? -1 : table[table.length - 1]
+  if(table[amount] === null){
+    return -1
+  } 
+  return table[amount].length
 }
-
 
 
 const coins = [1, 2, 5, 10]
 
-console.log(coinChange(coins, 12))
+console.log(coinChange(12, coins))
+console.log(coinChange(3, [2]))
