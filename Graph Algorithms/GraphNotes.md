@@ -7,6 +7,8 @@
   - ex: key = node value = array of neighbors
 ### Acyclic 
   - no cycles - some path where you get back to where you started
+### Cyclic
+  - has cycles - to prevent infinite loop mark nodes as visited
 ### Depth First Traversal
 - Travel as 'deep' as you can first
 - Can tell you if you can get to some node
