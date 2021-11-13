@@ -1,5 +1,6 @@
 package DynamicProgramming.Java.memo.sum;
 import java.util.HashMap;
+import java.util.Map;
 // input: array of positive integers and target integer
 // output: boolean
 // objective: return true if can add numbers in array to
@@ -8,14 +9,19 @@ import java.util.HashMap;
 // time complex: brute force: O(n^m) memoizationO(m * n) 
 public class CanSum {
   public static void main(String[] args) {
-    int[] numbers = {5, 3, 4, 7};
-    int[] numbers2 = {7, 14};
-    System.out.println("hello");
-    System.out.println(canSum(7, numbers));
-    System.out.println(canSumMemo(7, numbers));
-    System.out.println(canSumMemo(15, numbers2));
+    System.out.println(canSumMemo(7, new int[] { 2, 3 })); //true
+    memoTable.clear();
+    System.out.println(canSumMemo(7, new int[] { 5, 3, 4, 7 })); //true
+    memoTable.clear();
+    System.out.println(canSumMemo(7, new int[] { 2, 4 })); //false
+    memoTable.clear();
+    System.out.println(canSumMemo(8, new int[] { 2, 3, 5 })); //true
+    memoTable.clear();
+    System.out.println(canSumMemo(300, new int[] { 7, 14 })); //false
+    memoTable.clear();
   }
 
+  
   public static boolean canSum(int target, int[] numbers ) {
     // base cases
     if(target == 0) return true;
@@ -28,21 +34,26 @@ public class CanSum {
     return false;
   }
 
-  public static boolean canSumMemo(int target, int[] numbers ) {
-    HashMap<Integer, Boolean> memoTable = new HashMap<>();
+
+  private static Map<Integer, Boolean> memoTable = new HashMap<>();
+
+  public static boolean canSumMemo(int target, int[] numbers) {
+    System.out.println("memo " +  memoTable);
     // base cases
     if(memoTable.containsKey(target)) return memoTable.get(target);
     if(target == 0) return true;
     if(target < 0 ) return false;
 
-    for(int number : numbers ){
-      int remainder = target - number;
+    for(int number = 0; number < numbers.length; number++){
+      int remainder = target - numbers[number];
       if(canSumMemo(remainder, numbers)) {
         memoTable.put(target, true);
         return true;
       }
     }
+    
     memoTable.put(target, false);
+    // System.out.println("memo " + memoTable);
     return false;
   }
 
