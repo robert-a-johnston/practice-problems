@@ -34,18 +34,18 @@ public class CanSum {
     return false;
   }
 
-
+  // table to hold memos get and put O(1)
   private static Map<Integer, Boolean> memoTable = new HashMap<>();
 
   public static boolean canSumMemo(int target, int[] numbers) {
-    System.out.println("memo " +  memoTable);
+    
     // base cases
     if(memoTable.containsKey(target)) return memoTable.get(target);
     if(target == 0) return true;
     if(target < 0 ) return false;
 
-    for(int number = 0; number < numbers.length; number++){
-      int remainder = target - numbers[number];
+    for(int number : numbers){
+      int remainder = target - number;
       if(canSumMemo(remainder, numbers)) {
         memoTable.put(target, true);
         return true;
@@ -53,7 +53,6 @@ public class CanSum {
     }
     
     memoTable.put(target, false);
-    // System.out.println("memo " + memoTable);
     return false;
   }
 
