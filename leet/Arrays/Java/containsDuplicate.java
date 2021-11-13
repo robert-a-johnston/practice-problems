@@ -1,4 +1,4 @@
-package Java;
+package Leet.Arrays.Java;
 import java.util.HashSet;
 
 public class containsDuplicate {

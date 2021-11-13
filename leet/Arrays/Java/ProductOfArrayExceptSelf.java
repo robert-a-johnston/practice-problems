@@ -1,3 +1,4 @@
+package Leet.Arrays.Java;
 // Given an integer array nums, return an array 
 // answer such that answer[i] is equal to the 
 // product of all the elements of nums except nums[i].
@@ -20,8 +21,6 @@
 
 // Objective: return array of answers where you multiply all numbers 
 // to the left and to the right of a specific number in the array
-
-package Java;
 
 import java.util.Arrays;
 

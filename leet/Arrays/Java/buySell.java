@@ -1,5 +1,4 @@
-package Java;
-import java.security.PublicKey;
+package Leet.Arrays.Java;
 import java.util.Arrays;
 
 // You are given an array prices where prices[i] 

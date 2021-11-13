@@ -1,4 +1,4 @@
-package Java;
+package Leet.Arrays.Java;
 // I: array and target number
 // O: indices of the two  numbers in any order
 // EDGE CASE: empty array, number used twice
