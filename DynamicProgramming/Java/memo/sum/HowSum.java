@@ -12,39 +12,48 @@ public class HowSum {
   public static void main(String[] args) {
     System.out.println(howSum(7, new int[] { 2, 3 })); //[2, 2, 3]
     memoTable.clear();
-    // System.out.println(howSum(7, new int[] { 5, 3, 4, 7 })); //[3, 4], [7]
-    // memoTable.clear();
-    // System.out.println(howSum(7, new int[] { 2, 4 })); //null
-    // memoTable.clear();
-    // System.out.println(howSum(8, new int[] { 2, 3, 5 })); //[2, 2, 2, 2], [3, 5]
-    // memoTable.clear();
-    // System.out.println(howSum(300, new int[] { 7, 14 })); //null
-    // memoTable.clear();
+    System.out.println(howSum(7, new int[] { 5, 3, 4, 7 })); //[3, 4], [7]
+    memoTable.clear();
+    System.out.println(howSum(7, new int[] { 2, 4 })); //null
+    memoTable.clear();
+    System.out.println(howSum(8, new int[] { 2, 3, 5 })); //[2, 2, 2, 2], [3, 5]
+    memoTable.clear();
+    System.out.println(howSum(30, new int[] { 7, 14 })); //null
+    memoTable.clear();
   }
 
   private static Map<Integer, ArrayList<Integer>> memoTable = new HashMap<>();
   
 
   public static ArrayList<Integer> howSum(int target, int[] numbers) {
-    System.out.println(memoTable);
-    if(memoTable.containsKey(target)) return memoTable.get(target);
+
+    if(memoTable.containsKey(target)) {
+      return memoTable.get(target);
+    }
     // base cases
-    
-    if(target == 0) return new int[0];
-    if(target < 0) return null;
+    if(target == 0) {
+      return new ArrayList<>();
+    }
+    if(target < 0) {
+      // System.out.println("if3");
+      return null;
+    }
 
     for(int number : numbers) {
       int remainder = target - number;
-      System.out.println(remainder);
-      int[] remainderResult = howSum(remainder, numbers);
+      System.out.println("r " + remainder);
+      ArrayList<Integer> remainderResult = howSum(remainder, numbers);
+      // System.out.println("rr " + remainderResult);
       if(remainderResult != null) {
+        // System.out.println("if4 " + target + " " + remainderResult);
+        remainderResult.add(number);
         memoTable.put(target, remainderResult);
-
+        // System.out.println("mt " + memoTable);
         return memoTable.get(target);
       }
     }
     memoTable.put(target, null);
-    System.out.println("remainder");
+    // System.out.println("remainder");
     return null;
   }
 }
