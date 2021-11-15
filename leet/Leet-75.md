@@ -40,7 +40,8 @@
 - [Coin Change](https://leetcode.com/problems/coin-change/) (medium)
 - [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) (medium)
 - [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) (medium)
-- Word Break Problem - https://leetcode.com/problems/word-break/
+  - 2d table/array
+- [Word Break Problem](https://leetcode.com/problems/word-break/)
 - Combination Sum - https://leetcode.com/problems/combination-sum-iv/
 - House Robber - https://leetcode.com/problems/house-robber/
 - House Robber II - https://leetcode.com/problems/house-robber-ii/
