@@ -35,7 +35,6 @@ public class HowSum {
       return new ArrayList<>();
     }
     if(target < 0) {
-      // System.out.println("if3");
       return null;
     }
 
@@ -43,17 +42,14 @@ public class HowSum {
       int remainder = target - number;
       System.out.println("r " + remainder);
       ArrayList<Integer> remainderResult = howSum(remainder, numbers);
-      // System.out.println("rr " + remainderResult);
       if(remainderResult != null) {
-        // System.out.println("if4 " + target + " " + remainderResult);
         remainderResult.add(number);
         memoTable.put(target, remainderResult);
-        // System.out.println("mt " + memoTable);
         return memoTable.get(target);
       }
     }
+    
     memoTable.put(target, null);
-    // System.out.println("remainder");
     return null;
   }
 }
