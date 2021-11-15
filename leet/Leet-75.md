@@ -37,9 +37,9 @@
 ## Dynamic Programming
 
 - [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) (easy)
-- Coin Change - https://leetcode.com/problems/coin-change/
-- Longest Increasing Subsequence - https://leetcode.com/problems/longest-increasing-subsequence/ (medium)
-- Longest Common Subsequence -
+- [Coin Change](https://leetcode.com/problems/coin-change/) (medium)
+- [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) (medium)
+- [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) (medium)
 - Word Break Problem - https://leetcode.com/problems/word-break/
 - Combination Sum - https://leetcode.com/problems/combination-sum-iv/
 - House Robber - https://leetcode.com/problems/house-robber/
