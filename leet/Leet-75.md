@@ -44,6 +44,7 @@
 - [Word Break Problem](https://leetcode.com/problems/word-break/)(medium)
   - use table with target
 - [Combination Sum](https://leetcode.com/problems/combination-sum-iv/)(medium)
+  - use table with target
 - House Robber - https://leetcode.com/problems/house-robber/
 - House Robber II - https://leetcode.com/problems/house-robber-ii/
 - Decode Ways - https://leetcode.com/problems/decode-ways/

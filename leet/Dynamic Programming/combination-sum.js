@@ -5,20 +5,21 @@
 // The answer is guaranteed to fit in a 32-bit integer.
 
 var combinationSum4 = function(nums, target) {
-  const table = Array(target + 1).fill(null)
-  table[0] = []
-  const ans = []
-
-  for(let i = 0; i <= target; i++) {
-    if(table[i] !== null) {
-      for(let num of nums) {
-        table[i + num] = [...table[i], num]
-        
-        
-        console.log(table[i+ num])
-      }
+  const table = new Array(target + 1).fill(0);
+    table[0] = 1;
+    for(let i = 1; i<= target; i++) {
+        for(let number of nums) {
+          // if i minus number in nums is not neg
+            if((i - number) >=0) {
+                table[i] += table[i - number];
+                
+            }
+        }
     }
-  }
+    // return second to last value in table
+    return table[target];
+
+  
 }
 
 console.log(combinationSum4([1, 2, 3], 4))

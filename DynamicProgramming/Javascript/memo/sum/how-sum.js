@@ -13,8 +13,6 @@ const howSum = function(target, numbers, memo = {}) {
     const remainderResult = howSum(remainder, numbers, memo)
     if(remainderResult !== null) {
       memo[target] = [...remainderResult, num]
-      
-      let memoT = memo[target]
       return memo[target]
     }
   }
