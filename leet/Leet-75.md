@@ -46,8 +46,9 @@
 - [Combination Sum](https://leetcode.com/problems/combination-sum-iv/)(medium)
   - use table with target, have to use 2 for loops
 - [House Robber](https://leetcode.com/problems/house-robber/)(medium)
-- House Robber II - https://leetcode.com/problems/house-robber-ii/
-- Decode Ways - https://leetcode.com/problems/decode-ways/
+  - Max of n - 1 or n - 2, set up defaults for [] array lengths 1 and 2
+- [House Robber II](https://leetcode.com/problems/house-robber-ii/) (medium)
+- [Decode Ways](https://leetcode.com/problems/decode-ways/)
 - Unique Paths - https://leetcode.com/problems/unique-paths/
 - Jump Game - https://leetcode.com/problems/jump-game/
 

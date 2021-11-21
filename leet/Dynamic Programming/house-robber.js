@@ -22,3 +22,4 @@ const houseRobber = (nums) => {
 }
 
 console.log(houseRobber([1,2,3,1])) // 4
+console.log(houseRobber([2, 3, 2]))
