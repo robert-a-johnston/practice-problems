@@ -19,7 +19,9 @@ const findShortestPathWithLogs = (graph, startNode, endNode) => {
 	distances = Object.assign(distances, graph[startNode])
 
 	// track paths
+  // don't know parent of end node yet so set to null
 	let parents = { endNode: null }
+  
 	for (let child in graph[startNode]) {
 		parents[child] = startNode
 	}
