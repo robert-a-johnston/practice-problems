@@ -49,7 +49,8 @@
   - Max of n - 1 or n - 2, set up defaults for [] array lengths 1 and 2
 - [House Robber II](https://leetcode.com/problems/house-robber-ii/) (medium)
 - [Decode Ways](https://leetcode.com/problems/decode-ways/) (medium)
-- Unique Paths - https://leetcode.com/problems/unique-paths/
+  - do not need to decode, just if check one and 2 digits
+- [Unique Paths](https://leetcode.com/problems/unique-paths/)
 - Jump Game - https://leetcode.com/problems/jump-game/
 
 Graph
