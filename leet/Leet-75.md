@@ -53,10 +53,11 @@
 - [Unique Paths](https://leetcode.com/problems/unique-paths/) (medium)
   - can be done using tabulation or memoization (fib variation)
 - [Jump Game](https://leetcode.com/problems/jump-game/) (medium)
+  - start at end of array
 
 Graph
 
-- Clone Graph - https://leetcode.com/problems/clone-graph/
+- (Clone Graph)[https://leetcode.com/problems/clone-graph/] (medium)
 - Course Schedule - https://leetcode.com/problems/course-schedule/
 - Pacific Atlantic Water Flow - https://leetcode.com/problems/pacific-atlantic-water-flow/
 - Number of Islands - https://leetcode.com/problems/number-of-islands/
