@@ -50,8 +50,9 @@
 - [House Robber II](https://leetcode.com/problems/house-robber-ii/) (medium)
 - [Decode Ways](https://leetcode.com/problems/decode-ways/) (medium)
   - do not need to decode, just if check one and 2 digits
-- [Unique Paths](https://leetcode.com/problems/unique-paths/)
-- Jump Game - https://leetcode.com/problems/jump-game/
+- [Unique Paths](https://leetcode.com/problems/unique-paths/) (medium)
+  - can be done using tabulation or memoization (fib variation)
+- [Jump Game](https://leetcode.com/problems/jump-game/) (medium)
 
 Graph
 
