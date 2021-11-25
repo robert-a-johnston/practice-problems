@@ -60,7 +60,7 @@ Graph
 - [Clone Graph](https://leetcode.com/problems/clone-graph/) (medium)
   - use hashmap to keep track of what has been visited & dfs or bfs
 - [Course Schedule](https://leetcode.com/problems/course-schedule/) (medium)
-- Pacific Atlantic Water Flow - https://leetcode.com/problems/pacific-atlantic-water-flow/
+- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) (medium)
 - Number of Islands - https://leetcode.com/problems/number-of-islands/
 - Longest Consecutive Sequence - https://leetcode.com/problems/longest-consecutive-sequence/
 - Alien Dictionary (Leetcode Premium) - https://leetcode.com/problems/alien-dictionary/
