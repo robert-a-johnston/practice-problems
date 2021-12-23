@@ -81,7 +81,8 @@ Interval
 
 Linked List
 
-- Reverse a Linked List - https://leetcode.com/problems/reverse-linked-list/
+- [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)(easy)
+  - note need to run within leet because of linked list
 - Detect Cycle in a Linked List - https://leetcode.com/problems/linked-list-cycle/
 - Merge Two Sorted Lists - https://leetcode.com/problems/merge-two-sorted-lists/
 - Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/
