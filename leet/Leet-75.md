@@ -90,7 +90,7 @@ Linked List
 Matrix
 
 - [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) (medium)
-- Spiral Matrix - https://leetcode.com/problems/spiral-matrix/
+- [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)(medium)
 - Rotate Image - https://leetcode.com/problems/rotate-image/
 - Word Search - https://leetcode.com/problems/word-search/
 String
