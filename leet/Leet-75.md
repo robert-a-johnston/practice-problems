@@ -93,11 +93,11 @@ Matrix
 - [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)(medium)
 - [Rotate Image](https://leetcode.com/problems/rotate-image/)(medium)
 - switch array positions
-- [Word Search](https://leetcode.com/problems/word-search/)
+- [Word Search](https://leetcode.com/problems/word-search/)(medium)
 String
 
-- Longest Substring Without Repeating Characters - https://leetcode.com/problems/longest-substring-without-repeating-characters/
-- Longest Repeating Character Replacement - https://leetcode.com/problems/longest-repeating-character-replacement/
+- [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)(medium)
+- [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
 - Minimum Window Substring - https://leetcode.com/problems/minimum-window-substring/
 - Valid Anagram - https://leetcode.com/problems/valid-anagram/
 - Group Anagrams - https://leetcode.com/problems/group-anagrams/
