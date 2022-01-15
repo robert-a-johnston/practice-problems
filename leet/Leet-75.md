@@ -55,7 +55,7 @@
 - [Jump Game](https://leetcode.com/problems/jump-game/) (medium)
   - start at end of array
 
-Graph
+## Graph
 
 - [Clone Graph](https://leetcode.com/problems/clone-graph/) (medium)
   - use hashmap to keep track of what has been visited & dfs or bfs
@@ -68,7 +68,7 @@ Graph
   - Use a set and check for numbers before and after.
 
 
-Interval
+## Interval
 
 - [Insert Interval](https://leetcode.com/problems/insert-interval/)(medium)
   - O(n) check prior and next values
@@ -76,7 +76,7 @@ Interval
 - [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)(medium)
 
 
-Linked List
+## Linked List
 
 - [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)(easy)
   - note need to run within leet because of linked list
@@ -87,16 +87,18 @@ Linked List
 - [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)(medium)
 - [Reorder List](https://leetcode.com/problems/reorder-list/)(medium)
 
-Matrix
+## Matrix
 
 - [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) (medium)
 - [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)(medium)
 - [Rotate Image](https://leetcode.com/problems/rotate-image/)(medium)
-- switch array positions
+  - switch array positions
 - [Word Search](https://leetcode.com/problems/word-search/)(medium)
-String
+  
+## String
 
 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)(medium)
+  - use Set and moving window
 - [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
 - Minimum Window Substring - https://leetcode.com/problems/minimum-window-substring/
 - Valid Anagram - https://leetcode.com/problems/valid-anagram/
@@ -107,7 +109,7 @@ String
 - Palindromic Substrings - https://leetcode.com/problems/palindromic-substrings/
 - Encode and Decode Strings (Leetcode Premium) - https://leetcode.com/problems/encode-and-decode-strings/
 
-Tree
+## Tree
 
 - Maximum Depth of Binary Tree - https://leetcode.com/problems/maximum-depth-of-binary-tree/
 - Same Tree - https://leetcode.com/problems/same-tree/
@@ -126,7 +128,7 @@ Tree
 
 ---
 
-Heap
+## Heap
 
 - Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/
 - Top K Frequent Elements - https://leetcode.com/problems/top-k-frequent-elements/
