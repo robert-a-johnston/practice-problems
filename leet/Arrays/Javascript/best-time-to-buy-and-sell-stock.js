@@ -24,17 +24,26 @@ function buySell(prices) {
   // check if next day is lower or higher
   // if lower change to buy price
   // if higher save sell price
+
+  // set buy price
  let buy = prices[0]
+ // track and return profit
  let profit = 0
+ // set initial price to 0 because
+ // buy is always set to first price
  prices[0] = 0
 
+
+ // iterate through prices array
+ // start at second value because first value is = 0
   for( let i = 1; i < prices.length; i++) {
+    // change buy price if current price is < buy price
     if(prices[i] < buy){
       buy = prices[i]
       prices[i] = 0
     } else {
+      // set profit to max between current price and previous profit
       profit = Math.max(prices[i] - buy, profit)
-      console.log(profit)
     }
   }
   return profit
