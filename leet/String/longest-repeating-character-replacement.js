@@ -12,26 +12,36 @@
  * @return {number}
  */
  var characterReplacement = function(s, k) {
-  let left = 0;
-  let right = 0;
-  let max = 0;
-  let mostFreqentCount = 0;
+  // floating window left
+  let left = 0
+  // number of replacements returned
+  let max = 0
+  // counter
+  let mostFrequentCount = 0
+  // create hash table
   let freqHash = new Array(26).fill(0);
-  let A = 'A'.charCodeAt();
+  // gets char code for A
+  let A = 'A'.charCodeAt()
+  
+  // set right side of window
   for (let right = 0; right < s.length; right++) {
-      const idx = s[right].charCodeAt() - A;
-      freqHash[idx] = freqHash[idx] + 1 || 1;
-      mostFreqentCount = Math.max(...freqHash);
-      while (right - left + 1 - mostFreqentCount > k) {
+    // sets index for char code in respect to A
+      const idx = s[right].charCodeAt() - A
+      // adds to hash table
+      freqHash[idx] = freqHash[idx] + 1 || 1
+      // splits up hash table and finds the most frequent count
+      mostFrequentCount = Math.max(...freqHash)
+      // moves window
+      while (right - left + 1 - mostFrequentCount > k) {
           freqHash[s[left].charCodeAt() - A]--;
-          mostFreqentCount = Math.max(...freqHash);
-          left++;
+          mostFrequentCount = Math.max(...freqHash)
+          left++
       }
-
-      max = Math.max(max, right - left + 1);
+      // sets max return
+      max = Math.max(max, right - left + 1)
   }
 
-  return max;
+  return max
 };
 
 console.log(characterReplacement('ABAB', 2)) // 4
