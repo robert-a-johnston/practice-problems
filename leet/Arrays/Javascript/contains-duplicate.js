@@ -11,26 +11,15 @@
 // return false if every element is distinct.
 
 // brute force fails
-// function containsDuplicate(nums) {
-//   let count = 0
-//   let tempNum = null
-//   for(let i = 0; i < nums.length; i++){
-//     tempNum = nums[i]
-//     console.log(tempNum)
-//      for(let j = 0; j < nums.length; j++) {
-//        console.log('tn, j', tempNum, nums[j])
-//        if(tempNum === nums[j]){
-//          count++
-//          console.log('count', count)
-//        } 
-//      }
-//      if(count > 1){
-//         return true}
-//     // console.log(count)
-//      count = 0
-//   }
-//   return false
-//}
+function containsDuplicateBF(nums) {
+  nums.sort()
+  for(let i = 0; i < nums.length; i++) {
+    if(nums[i]  === nums[i + 1]){
+      return true
+    }
+  }
+  return false
+}
 
 function containsDuplicate(nums){
   // create hash table
@@ -48,5 +37,6 @@ function containsDuplicate(nums){
 }
 
 let nums = [1, 2, 3, 2, 5, 2]
+let nums2 = [1, 2, 3, 4,]
 
-console.log(containsDuplicate(nums))
+console.log(containsDuplicateBF(nums2))

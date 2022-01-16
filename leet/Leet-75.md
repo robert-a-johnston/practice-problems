@@ -3,7 +3,7 @@
 - [Two Sum](https://leetcode.com/problems/two-sum/) (easy)
   - use hash table to make O(n^2) -> O(n) use [.hasOwnProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)
 - [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) (easy)
-  - change the input string to track profit
+  - Always buy on first day then iterate checking for profit.
 - [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) (easy)
   - use hashMap with const hashMap = new Map then .set to create
 - [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) (medium)
