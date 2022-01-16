@@ -16,17 +16,22 @@
 // hint: kadane's algorithm
 
 function maxSubArray(nums) {
-  let n = nums.length
-  let lm = 0
-  let gm = Number.NEGATIVE_INFINITY
-
-  for(let i = 0; i < n; i++){
-    lm = Math.max(nums[i], nums[i] + lm)
-    if (lm > gm){
-      gm = lm
+  // set two variables to store max value of sub arrays
+  let tempMax = 0
+  // this is set to smallest number possible and the
+  // number returned
+  let returnMax = Number.NEGATIVE_INFINITY
+  // iterate over nms array
+  for(let i = 0; i < nums.length; i++) {
+    // sets tempMax to number
+    tempMax = Math.max(nums[i], nums[i] + tempMax)
+    // check to see if tempMax is greater than returnMax
+    // if so set return value to tempMax
+    if (tempMax > returnMax) {
+      returnMax = tempMax
     }
   }
-  return gm
+  return returnMax
 }
 
 let nums = [-2,1,-3,4,-1,2,1,-5,4]
