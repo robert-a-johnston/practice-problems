@@ -13,7 +13,7 @@
 - [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) (medium)
   - hint: kadane's algorithm
 - [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) (medium)
-  - use binary search look for center then recursion
+  - recursion.  Find center value of array.
 - [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) (medium)
   - binary search for pivot point to create two arrays and then binary search for target
 - [3Sum](https://leetcode.com/problems/3sum/) (medium)

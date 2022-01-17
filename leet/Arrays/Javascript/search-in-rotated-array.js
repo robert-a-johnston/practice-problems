@@ -27,43 +27,64 @@
 
 
 function search(nums, target) {
-  
+  // pointers
   let left = 0  // will become pivot point
-  let right = nums.length - 1
+  let right = nums.length - 1 // end index of array nums
 
   //find the pivot
   while(left < right){
+    // Set midpoint index between left and right pointers
     let mid = Math.floor((left + right) / 2)
-    console.log('mid, nr', mid, nums[right])
+    // If the value at the middle is greater than the number
+    // at the right, then value to the right of middle is the pointer
     if(nums[mid] > nums[right]){
         left = mid + 1
     }else{
+    // set right pointer to middle of array
+    // removing values from the end of the array
         right = mid
     }
   }   
   
+  // set pivot point
   let pivot = left
+  // reset left pointer to first index
   left = 0
+  // reset right pointer to last index
   right = nums.length - 1
 
+  // If the value at the pivot is less than or equal to the target value and
+  // the target value is less than or equal to the value at the right pointer
+  // set left pointer to pivot point
+  // else the right pointer is set to pivot point
   if(nums[pivot] <= target && target <= nums[right]) {
     left = pivot 
   } else {
     right = pivot 
   }
 
+
+  // move pointers together until they reach the same index
   while(left <= right) {
+    // Set midpoint index between left and right pointers
     let mid = Math.floor((left + right) / 2)
-    console.log('mid, nums[mid], target', mid, nums[mid],target)
-    if(nums[mid] == target) {
+    // If the target number is = the middle value return value
+    // found target
+    if(nums[mid] === target) {
       return mid 
     }
+    //  If the value at mid is less than the target number
+    // set left pointer index to mid + 1 indexe
+    // moves the left pointer to the right
     if(nums[mid] < target) {
       left = mid + 1
     } else {
+    // Set right pointer index to mid - 1 index
+    // moves the right pointer left
       right = mid - 1
     }
   }
+  // If target is not in array return -1
   return -1
 }
 
