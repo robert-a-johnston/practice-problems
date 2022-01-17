@@ -15,26 +15,41 @@
 // Objective: get all triplets that sum to 0
 
 function threeSum(nums) {
-    let result = [];
+    // Return array value
+    let result = []
+    // Sorts nums array
     nums.sort((a, b) => a - b)
 
+    // Iterate over array except last two elements
     for (let i = 0; i <= nums.length - 3; i++) {
-      // skips duplicates
+        // skips duplicates
         if (nums[i] === nums[i - 1]) continue
         // set pointers to front and back of array
-        let j = i + 1
-        let k = nums.length - 1
+        let front = i + 1
+        let back = nums.length - 1
 
         // pointers move together
-        while (j < k) {
-            let sum = nums[i] + nums[j] + nums[k]
-
-            if (sum < 0) j++
-            else if (sum > 0) k--
-            else if (nums[i] !== nums[j] !== nums[k]) result.push([nums[i], nums[j], nums[k]]), j++, k--
+        while (front < back) {
+            // Sets sum of pointers and current number
+            let sum = nums[i] + nums[front] + nums[back]
+            // If sum is less than target 0 then move front pointer to right
+            if (sum < 0) {
+                front++
+            }
+            // If sum is greater than target 0 then move back pointer to left
+            else if (sum > 0) {
+                back--
+            }
+            // If pointer values and current number are not the same
+            // Push values to result array  then move pointers
+            else if (nums[i] !== nums[front] !== nums[back]) {
+                result.push([nums[i], nums[front], nums[back]])
+                front++
+                back--
+            }
         }
     }
-    console.log(result)
+    
     // to remove duplicate sub-arrays
     let uniqueArray = Array.from(new Set(result.map(JSON.stringify)), JSON.parse)
     return uniqueArray
