@@ -10,9 +10,9 @@
 // space complexity:  
 
 // Objective: find the target value index
-
+// Use recursion
 function getSum(a, b) {
-  console.log(a, b)
+  // Edge case
   if (b == 0) {
     return a;
 } else {

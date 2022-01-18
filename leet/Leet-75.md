@@ -24,7 +24,7 @@
 ## Binary
 
 - [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) (medium)
-  - use bitwise operators ^ % <<
+  - use bitwise operators ^ % <<, and recursion
 - [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) (easy)
   - when change toString(2) to make sure binary number
 - [Counting Bits](https://leetcode.com/problems/counting-bits/) (easy)
