@@ -17,10 +17,13 @@
 // Objective: return missing number from set of numbers
 
 function missingNumber(nums) {
-  const sumEx = (nums.length * (nums.length + 1)) / 2
-  const sumAc = nums.reduce((a, b) => a + b)
-
-  return sumEx - sumAc
+  // Calculate the expected sum of numbers based on length of array
+  const sumExpected = (nums.length * (nums.length + 1)) / 2
+  // Calculate the actual sum of the numbers
+  const sumActual = nums.reduce((a, b) => a + b)
+  // Subtract the actual sum from the expected sum
+  // this leaves the number missing
+  return sumExpected - sumActual
 }
 
 let nums = [1, 2, 3, 4, 6]
