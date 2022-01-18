@@ -19,18 +19,22 @@
 // Objective: return the volume of water contained in 
 
 function maxArea(height) {
-  let ans = 0
-  let i = 0
-  let j = height.length -1
+  // Return answer of volume of water 
+  let volume = 0
+  // Pointers
+  let left = 0
+  let right = height.length -1
+
   // search from 'right side' of array to reduce x value at constant rate
-  while(i < j) {
+  // While left pointer index is < right pointer index
+  while(left < right) {
     // get answer by multiplying by min height of two values
     // then compare stored answer and select max of two.
-    ans = Math.max(ans, Math.min(height[i], height[j]) * (j - i))
-    // continue with loop by adding or taking away from i and j
-    height[i] <= height[j] ? i++ : j--
+    volume = Math.max(volume, Math.min(height[left], height[right]) * (right - left))
+    // continue with loop by adding or taking away from left and right pointers
+    height[left] <= height[right] ? left++ : right--
   }
-  return ans
+  return volume
 }
  let height = [1,8,6,2,5,4,8,3,7]
  let height1 = [1, 1]
