@@ -19,45 +19,41 @@
 // Objective: get fewest number of integers in array to get to target int
 // if cannot get to target then return -1
 
-// function coinChange(coins, amount) {
 
-//   const table = Array(amount + 1).fill(Infinity)
-
-//   table[0] = 0
-
-//   for(let coin of coins){
-//     for(let amount = 0; amount < table.length; amount++) {
-//       if(coin <= amount){
-//         let idx = amount - coin
-//         let potentialAmt = table[idx] + 1
-//         table[amount] = Math.min(potentialAmt, table[amount])
-//       }
-//     }
-//   }
-//   return table[table.length - 1] === Infinity ? -1 : table[table.length - 1]
-// }
-
-const coinChange = (amount, coins) => {
+const coinChange = (coins, amount) => {
+  // create hash table
   const table = Array(amount + 1).fill(null)
+  // set initial table value to empty array
   table[0] = []
+
+  // Iterate the amount number of times
   for(let i = 0; i <= amount; i++) {
+    // if the value of the table is not equal to null
     if(table[i] !== null) {
+      // iterate over coin array
       for(let coin of coins) {
+        // set combo to add coin to array of table at index i
         const combo = [...table[i], coin]
+        // if no value in table at i + coin value or
+        // length of array at i + coin is greater than current combo length
         if(!table[i + coin] || table[i + coin].length > combo.length) {
+          // set value in table at i + coin value to combo
           table[i + coin] = combo
         }
       }
     }
   }
+  // if the value in the table at amount has not been changed (is null)
+  // cannot get to amount with coins return -1
   if(table[amount] === null){
     return -1
   } 
+  // return length of array in table at index amount
   return table[amount].length
 }
 
 
 const coins = [1, 2, 5, 10]
 
-console.log(coinChange(12, coins))
-console.log(coinChange(3, [2]))
+console.log(coinChange(coins, 12))
+console.log(coinChange([2], 3))
