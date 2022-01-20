@@ -37,7 +37,9 @@
 ## Dynamic Programming
 
 - [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) (easy)
+  - Memoization with recursion
 - [Coin Change](https://leetcode.com/problems/coin-change/) (medium)
+  - Hash  table
 - [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) (medium)
 - [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) (medium)
   - 2d table/array
